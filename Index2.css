@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+
+    background-image: url('oso.jpg');
+    background-size: 100% 100%; /* Ajustar la imagen al 100% de la altura y ancho del cuerpo */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 40px; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el relleno predeterminado del body */
+  
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 5px 5px rgb(94, 94, 94);
+    z-index: 50;
+}
+
+i {
+    position: absolute;
+    
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+    top: -10px;
+    animation: nieve linear infinite;
+}
+
+@keyframes nieve {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: calc(100vh + 50px);
+    }
+}
+
+.form{
+
+    padding-top: 30px;
+  }
+  .login-box {
+    position: absolute;
+    margin: -10px;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 300px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(144, 146, 147, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+    
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  .btn-neon3{
+    
+      position: relative;
+      right: -240px;
+      display: inline-block;
+      padding: 15px 50px;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 24px;
+      overflow: hidden;
+      transition: 0.2s;
+    
+  }
+  .btn-neon3:hover{
+
+    background: #a945c7;
+    box-shadow: 0 0 5px #a945c7, 0 0 50px #c762e6, 0 0 100px #a945c7;
+    transition-delay: 0s;
+   
+  }
+  .btn-neon3 span{
+    position: absolute;
+    display: block;
+    
+  }
+  
+  
+/*parte del efecto del boton parte superior*/
+#span1{
+    
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+    animation: btn-anim1 1s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  /*fin del efecto*/
+  
+  /*parte del efecto del boton parte inferior*/
+  #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#ffffff);
+    
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s
+  }
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  /*fin del efecto*/
+  
+  /*parte del efecto del boton parte derechar*/
+  #span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  /*fin del efecto*/
+  
+  /*parte del efecto del boton parte izquierda*/
+  #span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  /*fin del efecto*/

@@ -1,0 +1,254 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1a0321;
+  font-family:consolas;
+}
+.form{
+  padding-top: 30px;
+}
+.login-box {
+  position: absolute;
+  margin: -35px;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 300px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.btn-neon{
+  
+    position: relative;
+    right: -100px;
+    display: inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+  
+}
+.btn-neon:hover{
+  background: #a945c7;
+  box-shadow: 0 0 5px #a945c7, 0 0 50px #a945c7, 0 0 100px #a945c7;
+  transition-delay: 0s;
+ 
+}
+.btn-neon span{
+  position: absolute;
+  display: block;
+  
+}
+
+/*parte del efecto del boton parte superior*/
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a945c7);
+  animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte inferior*/
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#a945c7);
+  
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte derechar*/
+#span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a945c7);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte izquierda*/
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #a945c7);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+/*fin del efecto*/
+
+
+
+
+/*Este es el otro codigo del segundo boton */
+
+.btn-neon2{
+  position: relative;
+  right: -120px;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.btn-neon2:hover{
+  background: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  transition-delay: 0s;
+ 
+}
+.btn-neon2 span{
+  position: absolute;
+  display: block;
+  
+}
+
+/*parte del efecto del boton parte superior*/
+#span5{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte inferior*/
+#span7{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#03e9f4);
+  
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte derechar*/
+#span6{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+/*fin del efecto*/
+
+/*parte del efecto del boton parte izquierda*/
+#span8{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+/*fin del efecto*/
